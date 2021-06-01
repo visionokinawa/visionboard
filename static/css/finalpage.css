@@ -1,0 +1,25 @@
+body {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    /* background-image: url(../img/tree.jpg); */
+    /* no-repeat center center */
+    background-size: auto;
+
+}
+
+.message {
+    margin: 10px auto;
+    width: 450px;
+}
+
+.input_p {
+    line-height: 10px;
+}
+
+@media screen and (min-width: 700px) {
+    .br-sp {
+        display: none;
+    }
+}

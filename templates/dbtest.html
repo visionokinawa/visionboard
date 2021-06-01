@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/dbtest.css">
+    <title>Document</title>
+</head>
+<body>
+    データベース表示のテストをするよ
+
+    <form action="/dbtest" method="POST">
+        <input type="radio" name="dbtest" value="1">1
+        <input type="radio" name="dbtest" value="2">2
+        <input type="radio" name="dbtest" value="3">3
+        <input type="radio" name="dbtest" value="4">4
+        <input type="radio" name="dbtest" value="5">5
+        <input type="radio" name="dbtest" value="6">6
+        <input type="submit" value="選択した画像を表示">
+    </form>
+    <img src="{{ path }}" alt="">
+    <p>{{ please_select }}</p>
+
+    <form action="/dbtest3" method="POST">
+        <input type="text" name="name" placeholder="dbtes3" id="dbtest3">
+        <input type="submit" value="データを追加">
+    </form>
+
+    {{ dbtestp }}
+
+    <form action="/dbtest4" method="POST">
+        <input type="text" name="name" placeholder="name">
+        <input type="password" placeholder="password">
+        <input type="submit" value="dbtest4">
+    </form>
+
+    {{ dbtest4 }}
+
+
+    <form action="/dbtest5" method="POST">
+        <label><input type="radio" name="dbtest" value="1">1</label>
+        <label><input type="radio" name="dbtest" value="2">2</label>
+        <label><input type="radio" name="dbtest" value="3">3</label>
+        <label><input type="radio" name="dbtest" value="4">4</label>
+        <label><input type="radio" name="dbtest" value="5">5</label>
+        <label><input type="radio" name="dbtest" value="6">6</label>
+        <label><input type="submit" value="画像idを送信">
+    </form>
+    <img src="{{ image_url }}" alt="">
+    <p><p>{{ please_select2 }}</p></p>
+
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/imagetest.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="target">
+
+    <h1>普通のボタンテスト</h1>
+
+    <h1>{{ title }}</h1>
+	<p>{{ message }}</p>
+	<form action="/submitted" method="POST" enctype="multipart/form-data">
+		<div>
+			<label for="name">名前：</label>
+			<input type="text" id="name" name="name" placeholder="名前">	
+		</div>
+		<div>
+			<input type="submit" value="送信">
+		</div>
+	</form>
+
+    <h1>画像ボタン</h1>
+
+    <form action="/imagebottun" method="POST">
+    <p>
+    入力欄：<input type="text" name="imagebottun">
+    </p>
+    <p>
+    <input type="image" src="../static/img/icon.jpeg" alt="送信">
+    </p>
+	<p>{{ message2 }}</p>
+    </form>
+
+    <h1>画像ボタン2</h1>
+
+    <form action="/imagebottun2" class="imagebottun2" method="POST">
+        <input type="image" src="../static/img/icon.jpeg" name="imagebottun" alt="送信" class="imagebutton">
+        <p>{{ message3 }}</p>
+    </form>
+
+
+    <h1>選択されたボタンごとに表示を変える</h1>
+    <form action="/radio" method="POST">
+    <p>3択<br>
+    <input type="radio" name="q1" value="はい">はい
+    <input type="radio" name="q1" value="いいえ">いいえ
+    <input type="radio" name="q1" value="どちらでもない">どちらでもない
+    </p>
+    <input type="submit" value="送信する">
+    </form>
+    {{ ans }}
+
+    <h1>選択されたボタンごとに違う画像を表示</h1>
+    <form action="/radio2" method="POST">
+    <p>3択<br>
+    <input type="radio" name="q1" value="はい">はい
+    <input type="radio" name="q1" value="いいえ">いいえ
+    <input type="radio" name="q1" value="どちらでもない">どちらでもない
+    </p>
+    <input type="submit" value="送信する">
+    </form>
+    <img src="{{ url }}" alt="">
+    
+    <div class="border-test">aiu</div>
+
+    <button type="button" name="button" value="button">
+        <font size="10" color="red">ボタンだよ</font>
+    </button>
+
+    <h1>ラジオボタン6つ</h1>
+
+    <form action="/imagetest2" method="POST" enctype="multipart/form-data">
+        <input type="radio" name="q1" value="1">
+        <input type="radio" name="q1" value="2">
+        <input type="radio" name="q1" value="3">
+        <br>
+        <input type="radio" name="q1" value="4">
+        <input type="radio" name="q1" value="5">
+        <input type="radio" name="q1" value="6">
+
+        <input type="submit" value="送信">
+    </form>
+
+    <img src="{{ url }}" alt="">
+    {{ inputagain }}
+
+
+    </div> <!--targetディビジョン-->
+
+    <a href="" id="ss" download="html_ss.png">スクリーンショット(document.body全体)をダウンロード</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script>
+      //ロードされた際の処理として実施：
+      window.onload = function(){
+  
+        //HTML内に画像を表示
+        html2canvas(document.getElementById("target"),{
+          onrendered: function(canvas){
+            //imgタグのsrcの中に、html2canvasがレンダリングした画像を指定する。
+            var imgData = canvas.toDataURL();
+            document.getElementById("result").src = imgData;
+          }
+        });
+  
+        //ボタンを押した際にダウンロードする画像を作る
+        html2canvas(document.body,{
+          onrendered: function(canvas){
+            //aタグのhrefにキャプチャ画像のURLを設定
+            var imgData = canvas.toDataURL();
+            document.getElementById("ss").href = imgData;
+          }
+        });
+  
+      }
+    </script>
+
+  <form action="">
+    <select name="" id="">
+      <option value="">あ</option>
+      <option value="">い</option>
+      <option disabled>う</option>
+    </select>
+    <input type="submit">
+    <input type="reset">
+  </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/step.css" media="screen and (min-width:700px)">
+    <link rel="stylesheet" href="../static/css/step.cp.css" media="screen and ( max-width:768px )"> 
+    <script src="../static/js/step.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="title">
+    <img src="../static/img/step1.png" alt="STEP1　収入・お金">
+    
+    <h2>～お金の望みを具体化しよう～</h2>
+    </div>
+
+    <div class="wording">
+        <br>お金がなくても叶う夢はあるけれど<br class="br-sp">お金があると行動に移しやすくなるよね。
+        <br>あなたはいくらくらいの収入が欲しい？<br class="br-sp">月収30万円、300万円？もっと？
+        <br>労働で得る収入もあるし、<br class="br-sp">思いがけず誰かからもらうってこともあるんだよ。
+    </div>
+
+    <div class="picselect" align="center">
+        <img src="../static/img/select.png" alt="写真を１枚選ぼう！直感で惹かれる写真は次のうちどれ？">
+    </div>
+
+    <div class="images" align="center">
+        <form action="/step2health.html" method="POST">
+            
+            <label><input type="radio" name="q1" value="1" class="radio"><img src="../static/img/kate-images/step1money/1.jpg" width="300px" heigth="300px" class="radio_image"></label>
+            <label><input type="radio" name="q1" value="2" class="radio"><img src="../static/img/kate-images/step1money/2.jpg" width="300px" heigth="300px" class="radio_image"></label>
+            <label><input type="radio" name="q1" value="3" class="radio"><img src="../static/img/kate-images/step1money/3.jpg" width="300px" heigth="300px" class="radio_image"></label>
+            <br>
+            <label><input type="radio" name="q1" value="4" class="radio"><img src="../static/img/kate-images/step1money/4.jpg" width="300px" heigth="300px" class="radio_image"></label>
+            <label><input type="radio" name="q1" value="5" class="radio"><img src="../static/img/kate-images/step1money/5.jpg" width="300px" heigth="300px" class="radio_image"></label>
+            <label><input type="radio" name="q1" value="6" class="radio"><img src="../static/img/kate-images/step1money/6.jpg" width="300px" heigth="300px" class="radio_image"></label>
+            
+            <br>
+            <button type="button" class="back_button" onclick="history.back()">戻る</button>
+            <button type="button" class="invisible_button">間</button>
+            <input type="submit" class="button8" value="決定">  
+
+        </form>
+    </div>
+
+    <p>{{ please_select }}</p>
+    
+</body>
+</html>

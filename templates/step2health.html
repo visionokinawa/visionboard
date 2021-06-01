@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/step.css" media="screen and (min-width:700px)">
+    <link rel="stylesheet" href="../static/css/step.cp.css" media="screen and ( max-width:768px )">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="title">
+    <img src="../static/img/step2.png" alt="STEP2 健康">
+    
+    <h2>～パッション？安らぎ？理想の関係～</h2>
+    </div>
+
+    <div class="wording">
+        <br>ひとりの時間も大切だけど、<br class="br-sp">一緒に喜んだり笑ったりすることのできる。
+        <br>家族やパートナーの存在も大事にしたい。<br class="br-sp">たとえまだ独り身でも妄想してみて。
+        <br>あなたの望む理想は、<br class="br-sp">その人(達)とどう過ごすことかな？
+        <br>安らぐ時間を過ごしたい？<br class="br-sp">情熱的なドキドキする経験をしてみたいのかな？
+    </div>
+
+    <div class="picselect" align="center">
+        <img src="../static/img/select.png" alt="写真を１枚選ぼう！直感で惹かれる写真は次のうちどれ？">
+    </div>
+
+    <div class="images" align="center"></div>
+        <form action="/step3family.html" method="POST">
+            <label><input type="radio" name="q2" value="1" class="radio"><img src="../static/img/kate-images/step2health/8.jpg" width="300px" heigth="300px" class="radio_image"></label>
+            <label><input type="radio" name="q2" value="2" class="radio"><img src="../static/img/kate-images/step2health/9.jpg" width="300px" heigth="300px" class="radio_image"></label>
+            <label><input type="radio" name="q2" value="3" class="radio"><img src="../static/img/kate-images/step2health/10.jpg" width="300px" heigth="300px" class="radio_image"></label>
+            <br>
+            <label><input type="radio" name="q2" value="4" class="radio"><img src="../static/img/kate-images/step2health/11.jpg" width="300px" heigth="300px" class="radio_image"></label>
+            <label><input type="radio" name="q2" value="5" class="radio"><img src="../static/img/kate-images/step2health/12.jpg" width="300px" heigth="300px" class="radio_image"></label>
+            <label><input type="radio" name="q2" value="6" class="radio"><img src="../static/img/kate-images/step2health/13.jpg" width="300px" heigth="300px" class="radio_image"></label>
+            
+            <br>
+            <button type="button" class="back_button" onclick="history.back()">戻る</button>
+            <button type="button" class="invisible_button">間</button>
+            <input type="submit" class="button8" value="決定"> 
+        
+        </form>
+    </div>
+
+    <p>{{ please_select }}</p>
+
+    <div class="selected_images_line">
+        <p>選んだ写真</p>
+        <img src="{{ step1 }}" class="selected_image" alt="">
+    </div>
+
+</body>
+</html>

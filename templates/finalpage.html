@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/finalpage.css" media="screen and (min-width:700px)">
+    <link rel="stylesheet" href="../static/css/finalpage.sp.css" media="screen and ( max-width:768px )"> 
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <br>
+    <img src = "../static/img/tree.jpg" width="250" height="180"/>
+
+    <div class="message">
+    <h2>これまでの写真選びで<br class="br-sp">気持ちは高まってきたかな？</h2>
+<h2>写真を見て「こんなの叶うわけなんかない」<br class="br-sp">と考えるのは厳禁！</h2>
+
+<h2>「なぜかわからないけど<br class="br-sp">なんか上手くいっちゃうかも！」<br class="br-sp">と考えてみよう。</h2>
+
+<h2>あなたは人生の主だ。<br class="br-sp">本当はなんだって出来るんだよ。</h2>
+<!-- <h3>小さな夢を叶えることを積み上げていくと自信がついてくるよ。</h3> -->
+<h2>自分を信じよう。</h2>
+</div>
+<br>
+<br>
+
+<form action="visionBoard.html" method="POST" enctype="multipart/form-data">
+
+	<p class="input_p">あなたの名前</p>
+	<input type="text" name="user_name" placeholder="名前">
+    <br><br>
+
+    <p class="input_p">目標や願望を書き込んでね！</p>
+    <textarea name="dream" class="dream" cols="20" rows="4" placeholder="目標や願望"></textarea>
+    <br><br>
+
+    <p class="input_p">あなたの写真をアップ！</p>
+    <input type="file" id="filename" name="image" accept="image/*" required>
+    <br><br>
+
+	<input type="submit" value="ビジョンボードを作成！" id="button2" style="cursor:pointer"; >
+
+</form>
+
+
+</body>
+</html>

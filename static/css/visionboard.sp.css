@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    /* background-image: url(../img/woody.jpeg); */
+    width: 100%;
+    border: 20px solid orangered;
+    /* 枠線 */
+    box-sizing: border-box;
+    /* margin-top: 20px; */
+}
+
+img {
+    height: 150px;
+    width: 85px;
+    margin: 5px 10px;
+    border-radius: 10%;
+}
+
+.catch {
+    font-size: 25px;
+}
+
+p.name {
+    font-size: 25px;
+}
+
+.download {
+    height: 30px;
+    width: 30px;
+    margin-bottom: -20px;
+}

@@ -1,0 +1,19 @@
+img {
+    height: 300px;
+    width: 300px;
+}
+
+
+.radio {
+    display: none;
+}
+
+.radio+.radio_image {
+    border: 3px #ffffff solid;
+    background-color: #ffffff;
+}
+
+.radio:checked+.radio_image {
+    border: 3px #ff0000 solid;
+    background-color: #ffeeee;
+}

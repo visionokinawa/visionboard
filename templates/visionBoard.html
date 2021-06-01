@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/visionBoard.css" media="screen and (min-width:700px)">
+    <link rel="stylesheet" href="../static/css/visionboard.sp.css" media="screen and ( max-width:768px )">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id="target">
+      <h1>MYビジョンボード</h1>
+
+
+
+    <p class="name">{{ board_name }}</p>
+    <img src="{{ step1 }}" alt="">
+    <img src="{{ step2 }}" alt="">
+    <br>
+    <img src="{{ step3 }}" alt="">
+    
+    <img src="{{ uploaded_image }}" alt="">
+    <!-- ../static/img/icon.jpeg -->
+    <img src="{{ step4 }}" alt="">
+    <br>
+    <p class="catch">{{ dream }}</p>
+    <img src="{{ step5 }}" alt="">
+    <img src="{{ step6 }}" alt="">
+    <img src="{{ step7 }}" alt="">
+
+
+
+      <!-- <canvas id="board" width="800" height="800" style="border:4px solid" >
+      </canvas>
+    </div> -->
+
+    <br>
+
+    <a href="" id="ss" download="html_ss.png" alt="ビジョンボードをダウンロード"><img src="../static/img/download.jpg" alt="ダウンロード" class="download"></a>
+    <p>ビジョンボードをダウンロード</p>
+    <!-- <a href="" id="ss" download="html_ss.png">スクリーンショット(document.body全体)をダウンロード</a> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script>
+    //ロードされた際の処理として実施：
+    window.onload = function(){
+
+      //HTML内に画像を表示
+      html2canvas(document.getElementById("target"),{
+        onrendered: function(canvas){
+          //imgタグのsrcの中に、html2canvasがレンダリングした画像を指定する。
+          var imgData = canvas.toDataURL();
+          document.getElementById("result").src = imgData;
+        }
+      });
+
+      //ボタンを押下した際にダウンロードする画像を作る
+      html2canvas(document.body,{
+        onrendered: function(canvas){
+          //aタグのhrefにキャプチャ画像のURLを設定
+          var imgData = canvas.toDataURL();
+          document.getElementById("ss").href = imgData;
+        }
+      });
+
+    }
+    </script>
+  </div>
+
+</body>
+</html>

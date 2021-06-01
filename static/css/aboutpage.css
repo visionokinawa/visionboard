@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    /* background-image: url(../img/bgborder.jpg); */
+    /* no-repeat center center */
+    background-size: auto auto;
+}
+
+p {
+    line-height: 25px;
+}
+
+.a {
+    text-align: center;
+}
+
+.exposition1 p {
+    font-size: 20px;
+}
+
+.exposition2 {
+    margin-top: 50px;
+}
+
+
+.background {
+    background: white;
+    /* padding: 10px; */
+    padding: 0.1em 0.1em;
+    border: 6px dashed #5ffc2a;
+    box-shadow: 0 0 0 8px white;
+    -moz-box-shadow: 0 0 0 5px white;
+    -webkit-box-shadow: 0 0 0 5px white;
+    font-size: 100%;
+    border-radius: 20px;
+}
+
+
+.container {
+    font-size: 20px;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container {
+    text-align: left;
+}

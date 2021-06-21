@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/css/test.css">
+        <script type="text/javascript" src="../static/js/jquery-3.6.0.js"></script>
+        <title>ボタンテストページ</title>
+    </head>
+    <body>
+    
+        <h1>ボタンテストページ</h1>
+
+        <form enctype="multipart/form-data">
+            <label><input type="radio" name="selected_button" value="1" class="radio_btn"><img src="../static/img/kate-images/1.jpg" class="radio_image"></label>
+            <label><input type="radio" name="selected_button" value="2" class="radio_btn"><img src="../static/img/kate-images/2.jpg" class="radio_image"></label>
+            <label><input type="radio" name="selected_button" value="3" class="radio_btn"><img src="../static/img/kate-images/3.jpg" class="radio_image"></label>
+            
+            <label><input type="button" id="up_btn"><img src="../static/img/ownimage.jpg" id="up_image"></label>
+            <input type="file" id="file_btn" accept="image/*">
+
+            <input type="button" id="sub_btn" value="次のページ">
+            <!-- <input type="submit" id="sub_btn"> -->
+            <button type="button" id="radio_reset">りせっと</button>
+            
+            
+        </form>
+
+        <div id="choiced_images">
+            <img id="choiced_img">
+        </div>
+        
+        <p id="js_return"></p>
+        
+
+        <script src="../static/js/bttest.js"></script>
+    </body>
+</html>

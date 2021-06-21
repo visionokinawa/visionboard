@@ -1,0 +1,72 @@
+/* ラジオボタンを隠す */
+input[type="radio"] {
+    display: none;
+}
+
+/* ラジオボタンをの代わりに表示させている画像 */
+.radio_image {
+    height: 300px;
+    width: 300px;
+    margin: 10px 20px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.radio_btn+.radio_image {
+    border: 3px solid transparent;
+    background-color: transparent;
+}
+
+.radio_btn:checked+.radio_image {
+    border: 3px #ff0000 solid;
+    background-color: #ffeeee;
+}
+
+
+
+/* 押すことで隠している<input type="file">を起動させるためのボタン。画像に切り替える */
+#up_btn {
+    display: none;
+}
+
+#up_image {
+    height: 300px;
+    width: 300px;
+    margin: 10px 20px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+#up_btn+#up_image {
+    border: 3px solid transparent;
+    background-color: transparent;
+}
+
+#up_btn+#up_image:active {
+    border: 3px #ff0000 solid;
+    background-color: #ffeeee;
+}
+
+
+/* <input type="file">のid ファイルをアップロードするボタン
+#file_btn {
+    display:none;
+} */
+
+/* 選んだ画像が表示されるエリア */
+#choiced_images {
+    background-color: lightyellow;
+    height: 160px;
+    width: auto;
+    text-align: center;
+
+}
+
+/* 選んだ画像をサムネイルで表示 */
+#choiced_img {
+    height: 100px;
+    width: 100px;
+    display: none;
+    margin: 0 auto;
+    vertical-align: middle;
+}

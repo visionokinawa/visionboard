@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- ↓にPC用CSSリンクを追加 -->
+    <link rel="stylesheet" href="../static/css/index.css" media="screen and (min-width:768  px)">
+<!--↓にタブレット用CSSリンクを追加  -->
+    <link rel="stylesheet" href="../static/css/index-tb.css" media="screen and (min-width:768  px)">
+<!-- ↓にスマホ用CSSリンクを追加 -->
+    <link rel="sylesheet" href="../static/css/index-sp.css" media="screen and (max-width:767px)">
+
+    <!--↓にJSスクリプトを用意(mami箱のみ)  -->
+    <script src="./index.js"></script>
+
+    <title>ホーム：らくらくビジョンボード</title>
+    <!-- <title>Document</title> -->
+</head>
+
+<body>
+<!--↓メニューバー作成  -->
+    <div class="header">
+        <div class="header-logo"> らくらくビジョンボード</div>
+        <div class="header-list">
+        <ul>
+        <li>HOME</li>
+        <li>ビジョンボードとは</li>
+        <li>戻る</li>
+        </ul>
+        </div>
+    </div>
+
+    <!-- <header> -->
+        <h1>
+            <a href="/">らくらくビジョンボード</a>
+        </h1>
+        <nav class="pc-nav">
+        <ul>
+            <li><a href="/">ホーム画面</a></li>
+            <li><a href="/static/#sec2">作り方・使い方</a></li>
+        </ul>
+    <!-- </header> -->
+
+    <!-- <div class="logo"> -->
+    <!-- <h1> らくらくビジョンボード</h1> -->
+
+    </div>
+    <div class="catch">
+        <p><font face="Impact, Comic Sans MS"> 作って！！眺めて！！夢をかなえる </font></p>
+    </div>
+
+    <div class="images">
+        <img src="../static/img/visionboard1.png" alt="ビジョンボード1">
+        <img src="../static/img/visionboard2.png" alt="ビジョンボード2">
+        <img src="../static/img/visionboard3.png" alt="ビジョンボード3">
+    </div>
+    <div class="description1">
+        <p>作っているとき、眺めているときのワクワクな気持ちがなりたい自分を引き寄せるよ！</p>
+    </div>
+    <div class="description2">
+        <p>それぞれのカテゴリーから写真を選ぶだけでらくらくにビジョンボードが完成するよ！</p>
+    </div>
+<!--↓ボタンを設置して次の動作へ-->
+    <div class="container">
+    <form action=""> <!--←""が出てきたけど？-->
+        <button class="button-bop" formaction="step1money.html" type="submit">
+            "さっそく作ってみる(^▽^)/"
+        </button>
+<!-- ↓2つ目のボタンを設置して作成の説明文表示 -->
+        <button class="button-bop2" formaction="aboutpage.html" type="submit">
+            "ビジョンボードの作り方・使い方"
+    </button>
+    </form>
+
+    </div>
+</body>
+</html>

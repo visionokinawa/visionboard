@@ -1,112 +1,97 @@
-html,
-body,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-form,
-input,
-/* div {
-    margin: 0;
-    padding: 0;
-} */
+body {
+    font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic'
+}
 
-.body {
-    font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
-    background-color: darkgoldenrod;
+h1:first-letter {
+    font-size: 2.5em;
+    color: #f32f49;
+
 }
 
 h1 {
-    color: #364e96;
-    /*文字色*/
-    padding: 0.5em 0;
-    /*上下の余白*/
-    border-top: solid 3px #364e96;
-    /*上線*/
-    border-bottom: solid 3px #364e96;
-    /*下線*/
+    text-align: center;
+    position: relative;
+    line-height: 1.8;
+    -webkit-box-reflect: below -60px -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 0.6));
 }
 
-.li {
-    list-style: none;
-}
-
-
-.header {
-
-    background-color: rgb(230, 92, 156);
-    color: #fff;
-    height: 90px;
-}
-
-.header-logo {
-    float: left;
-    font-size: 80px;
-    padding: 20px 40px;
-
-}
-
-.header-list li {
-    float: left;
-    padding: 30px 20px;
-}
 
 body {
-    font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+    background-color: #fff;
+    text-align: center
 }
 
-li {
-    list-style: none;
+.catch {
+    text-align: center;
+
 }
 
-/* ここからCSSを記述してください */
-.header {
-    background-color: #26d0c9;
-    color: #fff;
-    height: 90px;
-}
-
-/* * {
+.catch {
+    display: inline-block;
+    position: relative;
+    height: 45px;
+    text-align: center;
     box-sizing: border-box;
-} */
+    -webkit-transform: rotate(-10deg) skew(-17deg, 4deg);
+    transform: rotate(-10deg) skew(-17deg, 4deg);
+}
 
-/* body {
+.catch:before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #f385a6;
+    bottom: -7px;
+    left: -15px;
+    z-index: -2;
+}
+
+.catch:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #f385a6;
+    bottom: -10px;
+    right: -25px;
+    z-index: -2;
+}
+
+.catch h3 {
+    display: inline-block;
+    position: relative;
     margin: 0;
-    padding: 0;
-    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #e6e6e6;
+    padding: 0 20px;
+    line-height: 45px;
+    font-size: 18px;
+    color: white;
+    background: #f385a6;
 }
 
-h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
+.catch h3:before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 7px transparent;
+    border-right: solid 25px #f385a6;
 }
 
-a {
-    text-decoration: none;
-    color: #4b4b4b;
+.catch h3:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    right: 0;
+    border: none;
+    border-bottom: solid 10px transparent;
+    border-left: solid 15px #f385a6;
 }
 
-nav {
-    margin: 0 0 0 auto;
-}
+.images {
+    text-align: center;
 
-ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
-}
-
-li {
-    margin: 0 0 0 15px;
-    font-size: 14px;
 }
 
 img {
@@ -114,5 +99,230 @@ img {
     vertical-align: bottom;
     margin: 0 auto;
     height: auto;
-    margin
-} */
+    margin-bottom: 30px;
+    width: 150px;
+    margin-left: 20px;
+}
+
+.description1 {
+    text-align: center;
+
+}
+
+.description2 {
+    text-align: center;
+
+}
+
+.container {
+    text-align: center;
+
+}
+
+
+.button-bop {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    background: #f32f49;
+    /*背景色*/
+    color: #f32f49;
+    /*=背景色*/
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2);
+    border-bottom: solid 2px #962534;
+    ;
+    border-radius: 4px;
+    /* font-weight: bold; */
+    text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+}
+
+.button-bop:active {
+    /*押したとき*/
+    border-bottom: solid 2px #f32f49;
+    box-shadow: none;
+    text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+@import "https://use.fontawesome.com/releases/v5.13.0/css/all.css";
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+/* 背景用*/
+body {
+    padding: 30px;
+    background: #fff;
+}
+
+.btn,
+a.btn,
+button.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+}
+
+.btn-wrap {
+    margin-bottom: 10px;
+    padding: 30px 10px;
+
+    text-align: center;
+}
+
+.btn-wrap--orange {
+    background: #f8ce51;
+}
+
+a.btn-tag {
+    padding: 1.25rem 3rem 1.25rem 80px;
+}
+
+a.btn-tag:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50px;
+    height: 100%;
+
+    content: "";
+
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+a.btn-tag--ver {
+    padding: calc(54px + 1rem) 2rem 1rem 2rem;
+
+    color: #fff;
+    border-bottom: 5px solid #db9014;
+    background: #f32f49;
+}
+
+a.btn-tag--ver:before {
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 20px;
+
+    border-radius: 0.5rem 0.5rem 0 0;
+    background: rgb(168, 164, 164);
+}
+
+a.btn-tag--ver i {
+    font-size: 120%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50px;
+    width: 100%;
+    padding: 1.5rem 0;
+
+    text-align: center;
+    letter-spacing: 0;
+
+    color: #f39800;
+}
+
+a.btn-tag--ver:hover {
+    margin-top: 3px;
+
+    border-bottom: 2px solid #db9014;
+    background: #ffa50e;
+}
+
+
+
+/* ↓また新たなもの */
+body {
+    background: #81bcd8;
+}
+
+.site-header {
+    background: #fff;
+    display: flex;
+    padding: 60px 20px;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.site-logo img {
+    height: 20px;
+    width: auto;
+}
+
+.gnav__menu {
+    display: flex;
+}
+
+.gnav__menu__item {
+    margin-left: 20px;
+}
+
+.gnav__menu__item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.hero {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.hero img {
+    height: auto;
+    width: 100%;
+}
+
+.content {
+    line-height: 1.6;
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 800px;
+}
+
+.content p {
+    margin-bottom: 40px;
+}
+
+.site-footer {
+    background: #333;
+    padding: 10px 0;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}

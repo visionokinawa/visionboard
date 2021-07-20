@@ -11,12 +11,12 @@ from datetime import datetime
 app = Flask(__name__)
 
 
-/* ボタンテスト用Python */
+# ボタンテスト用Python
 
 
 @app.route("/")
 def index():
-	return render_template("/bttest.html")
+	return render_template("/sample-step1.html")
 
 @app.route("/results.html/<file_name>")
 def next(file_name):
